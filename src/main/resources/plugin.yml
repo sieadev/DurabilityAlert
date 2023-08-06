@@ -1,0 +1,9 @@
+name: DurabilityAlert
+version: '${project.version}'
+main: com.siea.durabilityalert.DurabilityAlert
+api-version: 1.20
+permissions:
+  durabilityAlert:
+    children:
+        alert:
+          description: If require Permission is enabled only Players with this permission will receive alerts

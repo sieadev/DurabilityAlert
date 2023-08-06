@@ -1,0 +1,28 @@
+# Durability Alert
+# Repository: https://github.com/sieadev/durabilityalert
+# Authors: siea
+
+
+#             Contact:
+# Discord - dsc.gg/siea || @siea
+# Github - https://github.com/sieadev
+
+# This only allows Players with a certain permission to receive alerts ("durabilityAlert.alert")
+requirePermission: false
+
+# Set the default warning
+warningMessage: "&cYou only have little durability on your &e%item%&c: &4%durability%"
+
+# Set how you would like the warning to be displayed
+chatWarning: false
+titleWarning: false
+subTitleWarning: true
+
+# Configure title
+fadeIn: 5
+stay: 30
+fadeOut: 5
+
+# If the durability drops below this number a warning will be sent
+minimumDurability: 51
+
