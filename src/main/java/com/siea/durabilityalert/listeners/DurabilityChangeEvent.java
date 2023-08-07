@@ -7,7 +7,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerItemDamageEvent;
 import com.siea.durabilityalert.util.*;
 import org.bukkit.inventory.meta.Damageable;
-import org.bukkit.plugin.Plugin;
 
 public class DurabilityChangeEvent implements Listener {
 

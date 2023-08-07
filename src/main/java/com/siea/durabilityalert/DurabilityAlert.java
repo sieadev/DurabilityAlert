@@ -1,7 +1,6 @@
 package com.siea.durabilityalert;
 
 import com.siea.durabilityalert.listeners.DurabilityChangeEvent;
-import com.siea.durabilityalert.util.ConfigUtil;
 import com.siea.durabilityalert.util.ReplacePlaceholders;
 import org.bukkit.plugin.java.JavaPlugin;
 
