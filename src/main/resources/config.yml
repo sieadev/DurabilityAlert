@@ -7,6 +7,14 @@
 # Discord - dsc.gg/siea || @siea
 # Github - https://github.com/sieadev
 
+# How to use the config:
+# For colored text use ColourCodes exp: "&c" for red
+# Use %player% to pass in the Player
+# Use %item%& to pass in the Item
+# Use %durability% to pass in the Durability
+
+prefix: "§b[DA]"
+
 # This only allows Players with a certain permission to receive alerts ("durabilityAlert.alert")
 requirePermission: false
 
@@ -25,4 +33,3 @@ fadeOut: 5
 
 # If the durability drops below this number a warning will be sent
 minimumDurability: 51
-

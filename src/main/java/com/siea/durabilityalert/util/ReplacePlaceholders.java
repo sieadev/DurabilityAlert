@@ -25,10 +25,16 @@ public class ReplacePlaceholders {
 
         message = message.replace("%item%", itemName);
         message = message.replace("%durability%", "" + durability);
+        message = message.replace("%player%", "" + player.getDisplayName());
 
         // Adding color to the message
         message = ChatColor.translateAlternateColorCodes('&', message);
 
         return message;
     }
+    public String replaceColour(String message) {
+        message = ChatColor.translateAlternateColorCodes('&', message);
+        return message;
+    }
+
 }
