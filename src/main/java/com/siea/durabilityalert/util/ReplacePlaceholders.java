@@ -8,8 +8,7 @@ import org.bukkit.inventory.meta.Damageable;
 public class ReplacePlaceholders {
     private String itemName;
 
-    public String replacePlaceholders(Player player, String message) {
-        ItemStack item = player.getInventory().getItemInMainHand();
+    public String replacePlaceholders(Player player, String message, ItemStack item) {
         String itemName = item.getItemMeta().getDisplayName();
 
         if (itemName == ""){

@@ -55,7 +55,7 @@ public class DurabilityChangeEvent implements Listener {
             return;
         }
 
-        String message = new ReplacePlaceholders().replacePlaceholders(p, warningMessage);
+        String message = new ReplacePlaceholders().replacePlaceholders(p, warningMessage, e.getItem());
 
         if (chatWarning){
             p.sendMessage(message);

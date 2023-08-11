@@ -19,7 +19,7 @@ prefix: "§b[DA]"
 requirePermission: false
 
 # Set the default warning
-warningMessage: "&cYou only have little durability on your &e%item%&c: &4%durability%"
+warningMessage: "&cYour &e%item%&c is at &4%durability% &cdurability"
 
 # Set how you would like the warning to be displayed
 chatWarning: false
