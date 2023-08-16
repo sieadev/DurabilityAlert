@@ -17,7 +17,7 @@ public class ReplacePlaceholders {
             this.itemName = itemName;
         }
 
-        Damageable damageable = (Damageable) player.getInventory().getItemInMainHand().getItemMeta();
+        Damageable damageable = (Damageable) item.getItemMeta();
         int maxDurability = player.getInventory().getItemInMainHand().getType().getMaxDurability();
         assert damageable != null;
         int durability = maxDurability - damageable.getDamage() - 1;
