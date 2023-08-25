@@ -10,7 +10,7 @@ public final class DurabilityAlert extends JavaPlugin {
     public void onEnable() {
         saveDefaultConfig();
 
-        String prefix = new ReplacePlaceholders().replaceColour("prefix");
+        String prefix = new ReplacePlaceholders().replaceColour(getConfig().getString("prefix"));
         boolean requirePermission = getConfig().getBoolean("requirePermission");
         boolean chatWarning = getConfig().getBoolean("chatWarning");
         boolean titleWarning = getConfig().getBoolean("titleWarning");
@@ -20,8 +20,9 @@ public final class DurabilityAlert extends JavaPlugin {
         int fadeIn = getConfig().getInt("fadeIn");
         int stay = getConfig().getInt("stay");
         int fadeOut = getConfig().getInt("fadeOut");
+        int soundUnderDurability = getConfig().getInt("soundUnderDurability");
         getServer().getConsoleSender().sendMessage(prefix +"Config Successfully Loaded");
-        getServer().getPluginManager().registerEvents(new DurabilityChangeEvent(requirePermission, chatWarning, titleWarning, subTitleWarning, warningMessage, minimumDurability, fadeIn, stay, fadeOut), this);
+        getServer().getPluginManager().registerEvents(new DurabilityChangeEvent(requirePermission, chatWarning, titleWarning, subTitleWarning, warningMessage, minimumDurability, fadeIn, stay, fadeOut, soundUnderDurability), this);
     }
 
     @Override

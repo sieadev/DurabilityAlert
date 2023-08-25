@@ -1,6 +1,7 @@
 package com.siea.durabilityalert.listeners;
 
 import org.bukkit.GameMode;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -20,8 +21,9 @@ public class DurabilityChangeEvent implements Listener {
     private final int fadeOut;
     private final int fadeIn;
     private final int stay;
+    private final int soundUnderDurability;
 
-    public DurabilityChangeEvent(boolean requirePermission, boolean chatWarning, boolean titleWarning, boolean subTitleWarning, String warningMessage, int minimumDurability, int fadeIn, int stay, int fadeOut) {
+    public DurabilityChangeEvent(boolean requirePermission, boolean chatWarning, boolean titleWarning, boolean subTitleWarning, String warningMessage, int minimumDurability, int fadeIn, int stay, int fadeOut, int soundUnderDurability) {
         this.requirePermission = requirePermission;
         this.chatWarning = chatWarning;
         this.titleWarning = titleWarning;
@@ -31,6 +33,7 @@ public class DurabilityChangeEvent implements Listener {
         this.fadeIn = fadeIn;
         this.stay = stay;
         this.fadeOut = fadeOut;
+        this.soundUnderDurability = soundUnderDurability;
     }
 
     @EventHandler
@@ -72,6 +75,14 @@ public class DurabilityChangeEvent implements Listener {
 
         if (subTitleWarning){
             p.sendTitle("", message, fadeIn,stay,fadeOut);
+        }
+
+        if (durability < soundUnderDurability){
+            Sound warningSound = Sound.BLOCK_NOTE_BLOCK_PLING;
+            float volume = 1.0f;
+            float pitch = 1.0f;
+
+            p.playSound(p.getLocation(), warningSound, volume, pitch);
         }
 
     }
