@@ -22,7 +22,7 @@ This Minecraft Spigot Plugin adds alerts that warn's Players when their Armor/To
 
 ## License
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Apache 2.0 License](https://img.shields.io/badge/License-Apache-green.svg)](https://choosealicense.com/licenses/apache/)
 
 
 ## Contact
