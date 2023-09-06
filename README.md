@@ -1,20 +1,20 @@
 # Durability Alert
 
-This Minecraft Spigot Plugin adds alerts that warn's Players when their Armor/Tools are about to break
+This Minecraft Spigot Plugin adds alerts that warn Players when their Armor/Tools are about to break
 
 ## Features
 
 #### Alerts
 	- Alerts when Armor or Tools are about to break:
-		- "Your %item% is a about to break"
+		- "Your %item% is about to break"
 		- "Your %item% is at %durability% durability!"
-		- "Be Carefull! %item% is at %durability% durability!"
+		- "Be Careful! %item% is at %durability% durability!"
 	- Alert in Chat or with Titles & Subtitles
  #### Configurable 
-	- Switch between alert type // Chat, Title , Subtitle (or multiple)
-	- Customise alerts including Color, Duration of Titles, Text and more
+	- Switch between alert type // Chat, Title, Subtitle (or multiple)
+	- Customise alerts including Color, Duration of Titles, Text, and more
 	- Change Prefix
-	- Set required durabiity to recive a warning
+	- Set required durability to recieve a warning
 ## Authors
 
 - [@sieadev](https://www.github.com/sieadev)
