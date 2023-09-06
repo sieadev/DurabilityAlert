@@ -9,7 +9,6 @@ public final class DurabilityAlert extends JavaPlugin {
     @Override
     public void onEnable() {
         saveDefaultConfig();
-
         String prefix = new ReplacePlaceholders().replaceColour(getConfig().getString("prefix"));
         boolean requirePermission = getConfig().getBoolean("requirePermission");
         boolean chatWarning = getConfig().getBoolean("chatWarning");
