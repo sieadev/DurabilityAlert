@@ -31,5 +31,8 @@ fadeIn: 5
 stay: 30
 fadeOut: 5
 
+# Plays a sound with the message /set to -1 to turn off
+soundUnderDurability: 11
+
 # If the durability drops below this number a warning will be sent
 minimumDurability: 51
